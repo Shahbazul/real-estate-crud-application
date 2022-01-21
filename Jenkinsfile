@@ -8,7 +8,7 @@ stages {
 
   stage('Build Maven') {
     steps {
-      git branch: 'ashwini',url: 'https://github.com/ashwinihemegowda/real-estate-crud-application'
+      git branch: 'ashwini',url: 'https://github.com/Shahbazul/real-estate-crud-application.git'
       sh "mvn -Dmaven.test.failure.ignore=true clean package"
     }
   }
